@@ -1,3 +1,11 @@
+@keyframes gradient {
+	to {
+		background-position: 0%;
+	}
+	from {
+		background-position: 100%;
+	}
+}
 body {
 	margin: 0;
 	padding:0;
@@ -11,7 +19,10 @@ h1 {
 	padding: 10px;
 	font-size: 66px;
 	transform: translate(-50%, -50%);
-	background: linear-gradient(to left ,#ff0000,#ffff00,#bfff00,#00ff00,#0080ff,#0000ff);
+	background: linear-gradient(to left ,#ff0000,#ffff00,#bfff00,#00ff00,#0080ff,#0000ff,#8000ff,#ff00bf,#ff0040,#ff0000);
+	background-size: 600% 100%;
+	animation: gradient 5s linear infinite;
+	animation-direction: alternate ;
 	-webkit-text-fill-color:transparent;
 	-webkit-background-clip:text;
 	border-radius: 5px;
